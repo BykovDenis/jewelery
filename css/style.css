@@ -33,20 +33,35 @@
 }
 
 body{
-    width:  100% /*1920px;  */
-    box-shadow: inset 0 230px 0 0 lime;
+    width:  1920px;    
 }
 
 .main-header {    
     background: #262b2f url('../img/bg_image_header.jpg') 50% 100% no-repeat;       
-    height: 800px;      
+    height: 800px;
+    margin-bottom: 75px;
 }
 
 /* Обертка шапки */
 
-.header-layout{  
+.header-layout,
+.content-layout,
+.content-layout1    {  
     width: 950px;
-    margin: 0 auto;       
+    margin: 0 auto;     
+}
+
+.content-layout1 {
+    display: inline-block;
+    position: relative;
+    left:50%;
+    transform: translateX(-590px);
+}
+
+
+
+.cont .content-layout{
+    margin-bottom: 45px;
 }
 
 /* распорка */
@@ -78,6 +93,7 @@ body{
 
 .main-navigation li{
     display: inline-block;
+    vertical-align: baseline;
     margin-right: 35px;
     text-align: right;
 }
@@ -151,12 +167,156 @@ body{
     margin-bottom: 200px;
 }
 
-.btn a{
-    font: normal 16px/40px 'Roboto Bold';    
+
+.cont .content-column2 {
+    font: normal 16px/30px 'Roboto Light';
+    color: #b7b7b7;
+    text-align: left;
+    float: right;
+    word-wrap: break-word;
+    width:465px;
+    padding-right:5px;
+    padding-left: 25px;
 }
 
-.btn>div{
+.content-column2 p{
+    margin-bottom: 44px;
+}
+
+.content-column1{
+    float: left;
+    text-transform: uppercase;
+    width: 315px;
+    padding: 85px 0;
+    margin-right: 140px;
+}
+
+.content-column1 h2{
+    font: normal 48px/60px 'Roboto Bold';
+    color: #464646;
+}
+
+.callback {
+    width: 430px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:100px;
+}
+
+.callback h3{
+    font: normal 30px/24px 'Roboto Bold';
+}
+
+.callback p{
+    font: normal 18px/30px 'Roboto Light';
+    color: #b7b7b7;
+}
+
+.cont hr{
+    margin-bottom: 105px;
+}
+
+.steps{
+    margin-bottom: 40px;
+}
+
+.steps>div {
+    width: 300px;
+    display: inline-block;    
+    vertical-align: top;
+    margin-right: 20px;
+    margin-bottom: 40px;    
+}
+
+.steps .step-header {
+    font: normal 18px/24px 'Roboto Bold';
+    color: #262626; 
+    padding-right:30px;
+}
+
+.steps .step-content {
+    font: normal 16px/24px 'Roboto Light';
+    color: #b7b7b7; 
+    
+}
+
+
+.steps>div:nth-child(3n){
+    margin-right:0;
+}
+
+.step-layout i{
+    display: inline-block;
+    vertical-align: baseline;
+    width: 64px;
+    height: 64px;
+    margin: 20px 0 10px 0;    
+}
+
+.step-layout .icon-step1{    
+    background: url('../img/icon_house.png') 0 0 no-repeat;
+}
+
+.step-layout .icon-step2{    
+    background: url('../img/icon_mixer.png') 0 0 no-repeat;
+}
+
+.step-layout .icon-step3{    
+    background: url('../img/icon_money.png') 0 0 no-repeat;
+}
+
+.step-layout .icon-step4{    
+    background: url('../img/icon_calendar.png') 0 0 no-repeat;
+}
+
+.step-layout .icon-step5{    
+    background: url('../img/icon_hand.png') 0 0 no-repeat;
+}
+
+.step-layout .icon-step6{    
+    background: url('../img/icon_heart.png') 0 0 no-repeat;
+}
+
+
+.slider{
+    background-color: #faf9f9;    
+}
+
+.slider__content h3{
+    font: normal 30px/40px 'Roboto Bold';      
+    margin-bottom:20px;
+}
+
+.slider__preview {
+    float:left;
+    padding: 110px 0;
+}
+
+.slider__content {
+    float:right;
+    width: 470px;    
+    padding: 120px 0;
+}
+
+.slider__content p{
+    font: normal 18px/30px 'Roboto Light';
+    color: #b7b7b7;
+    text-align: left;
+    margin: 25px 0;
+    padding-right: 20px;
+}
+
+
+/*  Дизайн кнопок */
+.btn{
     border-radius:5px;
+}
+
+.btn a
+{
+    font: normal 16px/40px 'Roboto Bold';   
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn1 {
@@ -171,4 +331,45 @@ body{
     background-color: none;
     border: 2px solid #fff;
     padding: 8px 30px;        
+}
+
+.btn3 {
+    float: left;
+    background-color: #e92121;
+    margin-right: 25px;
+    padding: 8px 43px;    
+}
+
+/* --------------- */
+
+.slider__prev,
+.slider__next{
+    width: 20px;
+    height:40px;
+    margin: 272px 20px;
+    padding: 20px 30px;
+}
+
+.slider__prev {
+    float: left;
+}
+
+.slider__next {
+    float:right;
+    background-color: white;
+}
+
+.icon-next,
+.icon-prev{
+    display: inline-block;
+    width: 21px;    
+    height: 41px;
+}
+
+.icon-next{
+    background: url('../img/icon-next.png') 0 0 no-repeat;    
+}
+
+.icon-prev{
+    background: url('../img/icon-prev.png') 0 0 no-repeat;    
 }
