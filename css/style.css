@@ -282,14 +282,15 @@ body{
     background-color: #faf9f9;    
 }
 
-.slider__content h3{
+.slider__content h3,
+.comments h3{
     font: normal 30px/40px 'Roboto Bold';      
     margin-bottom:20px;
 }
 
 .slider__preview {
     float:left;
-    padding: 110px 0;
+    padding: 106px 0;
 }
 
 .slider__content {
@@ -346,7 +347,7 @@ body{
 .slider__next{
     width: 20px;
     height:40px;
-    margin: 272px 20px;
+    margin: 265px 20px;
     padding: 20px 30px;
 }
 
@@ -372,4 +373,229 @@ body{
 
 .icon-prev{
     background: url('../img/icon-prev.png') 0 0 no-repeat;    
+}
+
+.why {
+    margin-bottom: 25px;
+}
+
+.why .content-layout{
+    margin-bottom: 0;
+}
+
+.why__column1 h2,
+.work h2
+{
+    margin:0;
+    text-transform: uppercase;
+    color: #464646;
+    font: normal 48px/60px 'Roboto Bold';
+}
+
+.why__column1 {
+    float: left;
+    width:270px;    
+    padding-top: 165px;
+    padding-bottom: 105px;
+}
+
+.why__column2 {
+    float: right;
+    width: 541px;
+    padding-top: 95px;
+    padding-bottom: px;
+    font-size: 0;
+}
+
+.why-layout {
+    display: inline-block;
+    vertical-align: top;
+    width:223px;
+    margin-right:95px;
+    margin-bottom:70px;
+}
+
+.why-layout:nth-child(2n){
+    margin-right: 0;
+}
+
+.why-layout__header {
+    font: normal 18px/24px 'Roboto Bold';
+    color: #464646;
+    margin: 0;
+    margin-bottom: 17px;
+}
+
+.why-layout__content {
+    font: normal 16px/24px 'Roboto Light';
+    color: #b7b7b7;  
+    margin: 0;
+    width: 220px;
+    word-wrap:break-word;
+}
+
+.work{
+    font-size: 0;
+    margin-bottom: 78px;
+}
+
+.work h2{
+    margin-top: 60px;
+    margin-left: 45px;
+    margin-bottom: 45px;
+    width: 250px;
+}
+
+.work img{
+    margin-left: 45px;    
+}
+
+.ring-layout {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 0;
+    width:  235px;
+    height: 235px;  
+    content: '111';
+}
+
+.ring-layout.img1{
+    background: url("../img/ring_preview1.jpg") 0 0 no-repeat;
+    background-size: cover;      
+}
+
+
+.ring-layout.img2{
+    background: url("../img/ring_preview2.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+.ring-layout.img3{
+    background: url("../img/ring_preview3.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+.ring-layout.img4{
+    background: url("../img/ring_preview4.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+.ring-layout.img5{
+    background: url("../img/ring_preview5.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+.ring-layout.img6{
+    background: url("../img/ring_preview6.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+.work-content {
+    display: inline-block;
+    vertical-align: top;
+    height: 235px;
+    width: 470px;
+    text-align: left;
+    margin:0;
+}
+
+
+
+.work-content1 p:first-child,
+.work-content1 p:last-child{
+    font: normal 16px/30px 'Roboto Light';
+    color: #b7b7b7;
+    width: 435px; 
+    margin-top:45px;
+}
+
+.work-content1 p:first-child{
+    float: left;   
+    margin-right: 35px;
+}
+
+.work-content1 p:last-child{
+    float: right;   
+}
+
+.comments__header{
+    text-align: center;
+    margin: 0 auto;   
+    margin-bottom: 78px;
+}
+
+.comments__header>img{
+    margin-bottom: 15px;
+}
+
+.comments__header>p{
+    font: normal 18px/30px 'Roboto Light';
+    color: #b7b7b7;
+    width: 415px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.comments {
+    background-color: #faf9f9;
+    padding-top:45px;    
+}
+
+.comments__item {    
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    width: 300px;  
+    margin-right: 25px;
+    margin-bottom:70px;
+}
+
+
+.comments__item .item__header:before{
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../img/icon_comments.png') 0 0 no-repeat;    
+    width:  38px;
+    height: 38px;
+    background-size: 38px 38px;
+    content: '';
+    padding-right:22px;
+}
+
+.comments__item .item__header{
+    font: normal 18px/24px 'Roboto Bold';
+    color: #464646;  
+    margin:0;
+}
+
+.comments__item .item__title,
+.comments__item .item__content
+{    
+    padding-left:60px;
+    margin:0;
+    margin-bottom: 10px;
+}
+
+.comments__item .item__title{
+    font: normal 14px/24px 'Roboto Light';
+    color: #b7b7b7; 
+}
+
+.comments__item .item__content{
+    font: normal 16px/24px 'Roboto Light';
+    color: #b7b7b7;     
+}
+
+.comments__items {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+}
+
+.comments__items div:nth-child(3n){
+    margin-right:0;
 }
