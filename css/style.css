@@ -46,7 +46,8 @@ body{
 
 .header-layout,
 .content-layout,
-.content-layout1    {  
+.content-layout1,
+.footer-layout{  
     width: 950px;
     margin: 0 auto;     
 }
@@ -384,7 +385,8 @@ body{
 }
 
 .why__column1 h2,
-.work h2
+.work h2,
+.instagram h2
 {
     margin:0;
     text-transform: uppercase;
@@ -504,21 +506,24 @@ body{
 }
 
 
-
 .work-content1 p:first-child,
-.work-content1 p:last-child{
+.work-content1 p:last-child,
+.instagram-content1 p:first-child,
+.instagram-content1 p:last-child{
     font: normal 16px/30px 'Roboto Light';
     color: #b7b7b7;
     width: 435px; 
     margin-top:45px;
 }
 
-.work-content1 p:first-child{
+.work-content1 p:first-child,
+.instagram-content1 p:first-child{
     float: left;   
     margin-right: 35px;
 }
 
-.work-content1 p:last-child{
+.work-content1 p:last-child,
+.instagram-content1 p:last-child{
     float: right;   
 }
 
@@ -542,7 +547,8 @@ body{
 
 .comments {
     background-color: #faf9f9;
-    padding-top:45px;    
+    padding-top:45px;         
+    margin-bottom: 100px;
 }
 
 .comments__item {    
@@ -594,8 +600,104 @@ body{
     display: inline-block;
     vertical-align: top;
     font-size: 0;
+    margin-bottom:18px;
 }
 
 .comments__items div:nth-child(3n){
     margin-right:0;
+}
+
+.instagram {
+    font-size: 0;
+}
+
+.instagram-content h2{
+    margin-top: 60px;    
+    margin-bottom: 45px;
+    width: 250px;
+}
+
+.instagram-content img{
+     
+}
+
+.instagram-layout {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 0;
+    width:  235px;
+    height: 235px;  
+    content: '111';
+}
+
+.instagram-layout.img1{
+    background: url("../img/img_instagram_preview1.jpg") 0 0 no-repeat;
+    background-size: cover;  
+}
+
+.instagram-layout.img2{
+    background: url("../img/img_instagram_preview2.jpg") 0 0 no-repeat;
+    background-size: cover;  
+}
+
+.instagram-layout.img3{
+    background: url("../img/img_instagram_preview3.jpg") 0 0 no-repeat;
+    background-size: cover;  
+}
+
+.instagram-layout.img4{
+    background: url("../img/img_instagram_preview4.jpg") 0 0 no-repeat;
+    background-size: cover;  
+}
+
+.instagram-layout.img5{
+    background: url("../img/img_instagram_preview5.jpg") 0 0 no-repeat;
+    background-size: cover;  
+}
+
+.instagram-layout.img6{
+    background: url("../img/img_instagram_preview6.jpg") 0 0 no-repeat;
+    background-size: cover;  
+}
+
+
+.instagram-content {
+    display: inline-block;
+    vertical-align: top;
+    height: 235px;
+    width: 470px;
+    text-align: left;
+    margin:0;
+}
+
+
+
+
+
+.main-footer {
+    background-color: #141414;
+}
+
+.main-menu .logo1 {
+    font: normal 24px/60px 'Roboto Bold';
+    color: #fff;
+}
+
+.footer__menu-items {
+    width: 470px;
+    list-style-type:  none;
+}
+
+.footer__menu-item {
+    font: normal 16px/36px 'Roboto Light';
+    color: #474747;
+    display: inline-block;
+    vertical-align: baseline;
+    width: 165px;
+    margin-right: 50px
+    
+}
+
+.footer__menu-items:nth-child(2n) {
+    margin-right:  0;
 }
