@@ -33,7 +33,7 @@
 }
 
 body{
-    width:  1920px;    
+    width:  100%    
 }
 
 .main-header {    
@@ -87,6 +87,12 @@ body{
     color: white;      
 }
 
+.main-navigation a:hover{
+    cursor: pointer;
+    color: #e92424;
+    text-decoration: underline;
+}
+
 .main-navigation a{
     text-decoration: none;
     color: #fff;
@@ -110,6 +116,14 @@ body{
 .icon-font{
     font: normal 24px/60px 'Socialico';
     color: #fff;
+}
+
+.icon-font:hover{
+    color: #e92424;   
+}
+
+.icon-font__footer{
+    font: normal 36px/30px 'Socialico';
 }
 
 .icon-twitter:before {    
@@ -155,11 +169,11 @@ body{
 }
 
 .header-intro div:first-child{
-    font: normal 24px/60px 'Roboto Light';
+    font: normal 24px/40px 'Roboto Light';
     margin-bottom: 15px;
 }
 
-.header-intro  a{
+.header-intro a{
     text-decoration: none;
     color: white;
 }
@@ -323,9 +337,10 @@ body{
 
 .btn1 {
     float: left;
-    background-color: #e92121;
+    background-color: none;
+    border: 2px solid #fff;        
     margin-right: 25px;
-    padding: 0 45px;    
+    padding: 7px 45px;    
 }
 
 .btn2 {
@@ -335,11 +350,23 @@ body{
     padding: 8px 30px;        
 }
 
+.btn .btn1:hover,
+.btn .btn2:hover
+{
+    background-color: #e92121;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
 .btn3 {
     float: left;
     background-color: #e92121;
     margin-right: 25px;
     padding: 8px 43px;    
+}
+
+.btn3{
+    cursor: pointer;
 }
 
 /* --------------- */
@@ -358,7 +385,11 @@ body{
 
 .slider__next {
     float:right;
-    background-color: white;
+}
+
+.slider__next:hover,
+.slider__prev:hover{
+    background-color: white;    
 }
 
 .icon-next,
@@ -678,14 +709,27 @@ body{
     background-color: #141414;
 }
 
-.main-menu .logo1 {
+.main-footer .logo1 {
     font: normal 24px/60px 'Roboto Bold';
     color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
+
+.main-footer a{
+    color: #474747;
+    text-decoration: none;
+}
+
+.main-footer a:hover{
+    text-decoration: underline;
+}
+
 
 .footer__menu-items {
     width: 470px;
     list-style-type:  none;
+    padding: 0;
 }
 
 .footer__menu-item {
@@ -694,10 +738,59 @@ body{
     display: inline-block;
     vertical-align: baseline;
     width: 165px;
-    margin-right: 50px
-    
+    margin-right: 50px    
 }
 
 .footer__menu-items:nth-child(2n) {
     margin-right:  0;
+}
+
+.footer__menu {
+    padding: 35px 0;
+    float: left;
+}
+
+.cont {
+    padding-bottom: 30px;
+}
+
+.social {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 55px;  
+}
+
+.social a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;  
+    opacity: 0.2;    
+}
+
+.social a:hover{
+    opacity: 1;
+    text-decoration: none;
+}
+
+.social a:last-child{
+    margin-right: 0;
+}
+
+.footer__column2 {
+    padding: 75px 0;    
+    float: right;
+    text-align: right;
+}
+
+.icon-gl:before {
+    content: 'D';    
+}
+
+.icon-g:before {
+    content: 'G';      
+}
+
+.footer__copyright {
+    font: normal 16px/10px 'Roboto Light';
+    color: #474747;
 }
